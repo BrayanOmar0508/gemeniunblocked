@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnBlocked Gemeni AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="app-header">
+            <h1 class="heading">Hello, Student</h1>
+            <h2 class="sub-heading">How can i help you?</h2>
+        </header>
+        <!-- Cards -->
+        <!-- <ul class="cards">
+            <li class="card-item">
+                <p class="text">Tell me what you can do</p>
+                <span class="material-symbols-outlined">
+                    support_agent
+                </span>
+            </li>
+            <li class="card-item">
+                <p class="text">Write an essay of the history of chess</p>
+                <span class="material-symbols-outlined">
+                    history_edu
+                </span>
+            </li>
+            <li class="card-item">
+                <p class="text">Explore the world</p>
+                <span class="material-symbols-outlined">
+                    travel_explore
+                </span>
+            </li>
+            <li class="card-item">
+                <p class="text">Research a topic</p>
+                <span class="material-symbols-outlined">
+                    interests
+                </span>
+            </li>
+        </ul> -->
+
+        <div id="loading-screen">
+  <div class="loading-content">
+    <div class="circle">
+      <svg>
+        <circle cx="60" cy="60" r="50"></circle>
+        <circle id="progress-circle" cx="60" cy="60" r="50"></circle>
+      </svg>
+      <div id="loading-text">0%</div>
+    </div>
+    <p class="loading-credit">Made by Brayan</p>
+  </div>
+</div>
+
+
+        <!-- Chat Container -->
+        <div class="chat-container">
+        </div>
+
+        <div class="prompt-container">
+            <div class="prompt-wrapper">
+                <form action="#" class="prompt-form">
+                    <input type="text" placeholder="Ask Gemeni" class="prompt-input" required />
+                    <div class="actions">
+                        <div class="file-upload">
+                            <img src="" alt="" class="file-preview"/>
+                            <input type="file" accept="image/*, .pdf, .txt, .csv" hidden id="file-input">
+                            <button id="add-file" type="button" class="material-symbols-outlined">attach_file</button>
+                            <button  type="button" class="material-symbols-outlined file-icon">description</button>
+                            <button id="cancel-file" type="button" class="material-symbols-outlined">close</button>
+                        </div>
+                        <button id="stop-response" type="button" class="material-symbols-outlined">stop_circle</button>
+                        <button id="send-data" type="submit" class="material-symbols-outlined">arrow_upward</button>
+                    </div>
+                </form>
+                <button id="themes-toggle" type="button" class="material-symbols-outlined">light_mode</button>
+                <button id="delete-btn" type="button" class="material-symbols-outlined">delete</button>
+            </div>
+            <div class="footer">This ChatBot may display inaccurate info, including about people, so double-check its
+                responses.</div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
